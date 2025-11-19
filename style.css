@@ -1,4 +1,4 @@
-/* Reset básico (tira as margens padrão do navegador) */
+/* --- RESET BÁSICO --- */
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +11,14 @@ body {
     color: white;
 }
 
-/* Estilo do Cabeçalho */
+/* --- CABEÇALHO --- */
 header {
-    display: flex; /* Coloca itens lado a lado */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background-color: #1e1e1e;
-    border-bottom: 3px solid #00ff88; /* Linha neon verde */
+    border-bottom: 3px solid #00ff88;
 }
 
 .logo {
@@ -27,7 +27,7 @@ header {
 }
 
 .logo span {
-    color: #00ff88; /* Cor neon no "GAMES" */
+    color: #00ff88;
 }
 
 nav a {
@@ -46,7 +46,26 @@ nav a {
     font-weight: bold;
 }
 
-/* Estilo do Destaque (Hero) */
+/* --- CARRINHO DE COMPRAS --- */
+#carrinho-container {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#contagem-carrinho {
+    background-color: #ff0055;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+/* --- DESTAQUE (HERO) --- */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -62,14 +81,14 @@ nav a {
     margin-top: 20px;
     padding: 15px 30px;
     font-size: 18px;
-    background-color: #8a2be2; /* Roxo neon */
+    background-color: #8a2be2;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-/* Estilo dos Produtos */
+/* --- LISTA DE JOGOS --- */
 .jogos-container {
     padding: 50px;
     text-align: center;
@@ -78,7 +97,7 @@ nav a {
 .grade-jogos {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaço entre os cards */
+    gap: 20px;
     margin-top: 30px;
 }
 
@@ -91,7 +110,7 @@ nav a {
 }
 
 .card-jogo:hover {
-    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
+    transform: scale(1.05);
     transition: 0.3s;
     border-color: #00ff88;
 }
@@ -108,30 +127,66 @@ nav a {
     margin: 10px 0;
 }
 
+/* --- RODAPÉ --- */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #000;
     color: #777;
     margin-top: 50px;
-
-    /* --- ESTILO DO CARRINHO DE COMPRAS --- */
-
-#carrinho-container {
-    color: white; /* Cor do ícone do carrinho */
-    font-size: 20px;
-    margin-right: 20px; /* Espaço para separar do botão Login */
-    font-weight: bold;
-    display: inline-block; /* Garante que fique na linha */
 }
 
-#contagem-carrinho {
-    background-color: #ff0055; /* A bolinha vermelha/rosa */
+/* --- ESTILOS QUE ESTAVAM FALTANDO (LOGIN E CADASTRO) --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ocupa a tela toda */
+}
+
+.caixa-login {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.caixa-login h2 {
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.caixa-login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    background-color: #121212;
+    border: 1px solid #333;
     color: white;
-    padding: 2px 8px; /* Tamanho da bolinha */
-    border-radius: 50%; /* Deixa a borda redonda */
-    font-size: 14px;
-    vertical-align: top; /* Joga o número um pouquinho pra cima */
-    margin-left: 5px;
+    border-radius: 5px;
 }
+
+.caixa-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff88;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.esqueceu {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.esqueceu a {
+    color: #8a2be2;
 }
